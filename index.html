@@ -2,12 +2,52 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="dist/app.css">
     <title></title>
   </head>
   <body>
     <div id="root">
+      <nav class="navbar">
+        <div class="navbar-top">
+          <div class="navbar-top-section-left">
+            <span><i class="fas fa-clock"></i></span>
+            <span>Open Hours: Mon - Sat - 9:00-18:00</span>
+          </div>
+          <div class="navbar-top-section-right">
+            <div class="navbar-top-section-right-box">
+              <span><i class="fas fa-phone"></i></span>
+              <span>+1(305)1234-5678</span>
+            </div>
+            <div class="navbar-top-section-right-box">
+              <span><i class="fas fa-envelope"></i></span>
+              <span>hello@example.com</span>
+            </div>
+            <div class="navbar-top-section-right-box">
+              <span><i class="fab fa-facebook-f"></i></i></span>
+            </div>
+            <div class="navbar-top-section-right-box">
+              <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="navbar-top-section-right-box">
+              <span><i class="fab fa-linkedin-in"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-bottom">
+          <div class="navbar-bottom-section-left">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="navbar-bottom-section-right">
+            <div class="navbar-bottom-section-right-box" v-for="element in navbar">
+              <span><a href="'#' + element.link">{{element.option}}</a></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
 
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
