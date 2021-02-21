@@ -45,8 +45,89 @@
           </div>
         </div>
       </nav>
-      <div class="container">
-
+      <div class="jumbotron">
+        <div class="jumbotron-content">
+          <div class="jumbotron-content-title">
+            Ready <span> Team</span>
+          </div>
+          <div class="jumbotron-content-slogan">
+            No matter what your company needs, we will be ready to assist you in the best possible way.
+          </div>
+          <div class="jumbotron-content-buttonsArea">
+            <div class="jumbotron-content-buttonsArea-getIn"><span>GET IN TOUCH</span></div>
+            <div class="jumbotron-content-buttonsArea-readMore"><span>READ MORE</span></div>
+          </div>
+        </div>
+        <div class="jumbotron-slider">
+          <div class="jumbotron-slider-slide"></div>
+          <div class="jumbotron-slider-slide"></div>
+          <div class="jumbotron-slider-slide"></div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="services-content">
+          <span class="services-content-businessArea">OUR BUSINESS AREAS</span>
+          <div class="services-content-title">
+            Excellence in <span> Services</span>
+          </div>
+          <p class="services-content-description">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+          <div class="services-content-seeAll"><span>SEE ALL</span></div>
+          <div class="services-content-boxes">
+            <div class="services-content-boxes-box" v-for="item in service">
+              <img v-bind:src="item.image" alt="">
+              <span class="services-content-boxes-box-arrow"><i class="fas fa-arrow-right"></i></span>
+              <div class="services-content-boxes-box-title">{{item.title}}</div>
+              <span class="services-content-boxes-box-text">{{item.text}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about-left">
+          <div class="about-left-content">
+            <span class="about-left-content-network">ABOUT THE NETWORK</span>
+            <div class="about-left-content-title">
+              <span class="about-left-content-title-first">The</span><span class="about-left-title-second"> Company</span>
+            </div>
+            <p class="about-left-content-description">For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+            <div class="about-left-content-boxes">
+              <div class="about-left-content-boxes-box" v-for="item in about">
+                <div class="about-left-content-boxes-box-image" v-if="item.image === 'award'"><i class="fas fa-award"></i></div>
+                <div class="about-left-content-boxes-box-image" v-if="item.image === 'lock'"><i class="fas fa-lock"></i></i></div>
+                <div class="about-left-content-boxes-box-image" v-if="item.image === 'stamp'"><i class="fas fa-stamp"></i></div>
+                <div class="about-left-content-boxes-box-image" v-if="item.image === 'graduation'"><i class="fas fa-graduation-cap"></i></div>
+                <span class="about-left-content-boxes-box-title">{{item.title}}</span>
+                <div class="about-left-content-boxes-box-text">{{item.text}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right"></div>
+      </div>
+      <div class="projects">
+        <div class="projects-content">
+          <span class="projects-content-more">WE DO MORE FOR EVERYONE</span>
+          <div class="projects-content-title">
+            <span class="projects-content-title-first">Actions & </span><span class="projects-content-title-second"> Projects</span>
+          </div>
+          <div class="projects-content-filter">
+            <span class="projects-content-filter-option" v-for="item in filter">{{item.option}}</span>
+          </div>
+          <div class="projects-content-boxes">
+            <div class="projects-content-boxes-box" v-for="item in projects" :style="'background-image: url(' + item.img + '); background-size: cover; background-position: center;'">
+              <div class="projects-content-boxes-box-layOver">
+                <div class="projects-content-boxes-box-layOver-content">
+                  <div class="projects-content-boxes-box-layOver-content-text">
+                    {{item.text}}
+                  </div>
+                  <div class="projects-content-boxes-box-layOver-content-description">
+                    {{item.description}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
