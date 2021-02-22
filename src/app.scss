@@ -311,11 +311,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      &-more {
+        color: #058283;
+        font-size: 12px;
+        font-weight: bold;
+      }
       &-title{
         font-size: 50px;
         color: #21333e;
         padding: 20px 0;
-        span {
+        &-second {
           color: #058283;
           background-color: #d5e7e8;
           padding: 0 10px;
@@ -375,6 +380,256 @@
         }
         &-box:hover .projects-content-boxes-box-layOver-content-description{
           display: block;
+        }
+      }
+    }
+  }
+
+  .results {
+    width: 100%;
+    height: 100vh;
+
+    &-contentTop {
+      height: 70%;
+      width: 100%;
+      position: relative;
+      background-image: url('../images/bg-7.jpg');
+      background-size: 100%;
+      background-position: center;
+      &-content {
+        position: absolute;
+        width: 70%;
+        text-align: center;
+        top: 25%;
+        left: 15%;
+        transform: translate(-500% -50%);
+        &-what {
+          color: #058283;
+          font-size: 12px;
+          font-weight: bold;
+        }
+        &-title{
+          font-size: 40px;
+          color: white;
+          padding: 20px 0;
+          &-first {
+            color: white;
+            background-color: #21333e;
+            padding: 0 10px;
+          }
+        }
+        &-boxes {
+          margin-top: 40px;
+          width: 100%;
+          justify-content: space-between;
+          display: flex;
+          &-box{
+            &-result{
+              font-size: 25px;
+              font-weight: bold;
+              color: #058283;
+            }
+            &-area {
+              margin-top: 10px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &-contentBottom {
+      width: 100%;
+      height: 30%;
+      background-color: #111117;
+      position: relative;
+      &-boxes{
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        display: flex;
+        justify-content: space-between;
+        &-box {
+          img {
+            height: 20px;
+            color: lightgray;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &-content {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      width: 70%;
+      display: flex;
+      &-left {
+        width: 65%;
+        flex: none;
+        &-send {
+          color: #058283;
+          font-size: 12px;
+          font-weight: bold;
+        }
+        &-title {
+          font-size: 45px;
+          color: #21333e;
+          padding: 20px 0;
+          font-weight: bold;
+
+          &-second {
+            color: #058283;
+            background-color: #d5e7e8;
+            padding: 0 10px;
+          }
+        }
+        &-description {
+          color: gray;
+        }
+
+        &-form {
+          width: 100%;
+          padding: 20px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 25px;
+          &-text {
+            width : 48%;
+            border: none;
+            border-radius: 3px 3px;
+            background-color: lightgray;
+            height: 30px;
+            padding-left: 15px;
+            margin: 10px auto;
+          }
+          &-message {
+            width : 98%;
+            border: none;
+            border-radius: 3px 3px;
+            background-color: lightgray;
+            height: 100px;
+            padding-left: 15px;
+            margin: 10px auto
+          }
+          &-button {
+            padding: 10px 20px;
+            border-radius: 3px;
+            background-color: #058283;
+            color: white;
+            margin-left: 5px;
+          }
+        }
+      }
+      &-right {
+        padding-left: 40px;
+        &-title {
+          color: #21333e;
+          display: block;
+          font-size: 25px;
+          font-weight: bold;
+        }
+        &-description {
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          color: gray;
+        }
+        &-box {
+          margin: 15px 0;
+          &-icon {
+            border-radius: 50%;
+            padding: 10px;
+            display: inline-block;
+            color:#058283;
+            background-color: #d5e7e8;
+          }
+          &-text {
+            color:#058283;
+          }
+        }
+        &-button {
+          padding: 10px;
+          border-radius: 3px;
+          border: 1px solid #058283;
+          color: #058283;
+          margin: 5px 0;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 80vh;
+    background-color: #111117;
+    &-top {
+      width: 100%;
+      height: calc(80vh - 70px);
+    }
+    &-top {
+      width: 100%;
+      &-content {
+        margin: auto;
+        width: 70%;
+        color: gray;
+        display: flex;
+        &-left {
+          width: 25%;
+          font-size: 15px;
+          flex: none;
+          &-logo {
+            img {
+              height: 40px;
+            }
+          }
+          &-description {
+            margin: 25px 0;
+          }
+          &-box {
+            margin: 15px 0;
+            &-icon {
+              margin-right: 10px;
+              border-radius: 50%;
+            }
+          }
+          &-button {
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #058283;
+            color: white;
+            margin: 5px 0;
+            display: inline-block;
+            font-weight: bold;
+          }
+        }
+        &-right {
+          width: 75%;
+          height: 70px;
+          background-color: red;
+        }
+      }
+    }
+    &-bottom{
+      width: 100%;
+      height: 70px;
+      background-color: #0d0d11;
+      &-content {
+        margin: auto;
+        width: 70%;
+        height: 70px;
+        color: gray;
+        display: flex;
+        &-first, &-second{
+          width: 50%;
+          font-size: 15px;
+          text-align: center;
+          line-height: 70px;
         }
       }
     }

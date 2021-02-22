@@ -129,6 +129,104 @@
           </div>
         </div>
       </div>
+      <div class="results">
+        <div class="results-contentTop">
+          <div class="results-contentTop-content">
+            <span class="results-contentTop-content-what">WHAT ARE WE DOING</span>
+            <div class="results-contentTop-content-title">
+              <span class="results-contentTop-content-title-first">RESULTS</span><span class="results-contentTop-content-title-second"> in Numbers</span>
+            </div>
+            <div class="results-contentTop-content-boxes">
+              <div class="results-contentTop-content-boxes-box" v-for="item in results">
+                <div class="results-contentTop-content-boxes-box-result">{{item.result}}</div>
+                <div class="results-contentTop-content-boxes-box-area">{{item.area}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="results-contentBottom">
+          <div class="results-contentBottom-boxes">
+            <div class="results-contentBottom-boxes-box" v-for="item in techology">
+              <img :src="item.link" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-content">
+          <div class="contact-content-left">
+            <span class="contact-content-left-send">SEND A MESSAGE</span>
+            <div class="contact-content-left-title">
+              <span class="contact-content-left-title-first">Get in </span><span class="contact-content-left-title-second">Touch</span>
+            </div>
+            <span class="contact-content-left-description">We will respond to your message as soon as possible.</span>
+            <form class="contact-content-left-form" action="index.html" method="post">
+              <input type="text" name="Name" placeholder="Name" class="contact-content-left-form-text">
+              <input type="text" name="Email" placeholder="Email" class="contact-content-left-form-text">
+              <input type="text" name="Phone" placeholder="Phone" class="contact-content-left-form-text">
+              <input type="text" name="More" placeholder="More info" class="contact-content-left-form-text">
+              <input type="text" name="Message" placeholder="Message" class="contact-content-left-form-message">
+              <div class="contact-content-left-form-button"><span>SEND</span></div>
+            </form>
+          </div>
+          <div class="contact-content-right">
+            <span class="contact-content-right-title">Exaple Inc.</span>
+            <span class="contact-content-right-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+            <span class="contact-content-right-description">Praesent diam lacus, dapibus sed imperdiet consectetur.</span>
+            <div class="contact-content-right-box">
+              <span class="contact-content-right-box-icon"><i class="fas fa-phone"></i></span>
+              <span class="contact-content-right-box-text">+1(305)1234-5678</span>
+            </div>
+            <div class="contact-content-right-box">
+              <span class="contact-content-right-box-icon"><i class="fas fa-envelope"></i></span>
+              <span class="contact-content-right-box-text">hello@example.com</span>
+            </div>
+            <div class="contact-content-right-box">
+              <span class="contact-content-right-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="contact-content-right-box-text">Main Avenue, 987</span>
+            </div>
+            <div class="contact-content-right-button">VIEW MAP</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-top-content">
+            <div class="footer-top-content-left">
+              <div class="footer-top-content-left-logo">
+                <img src="images/logo.png" alt="">
+              </div>
+              <div class="footer-top-content-left-description">A Functional HTML Template for Corporate & Business.</div>
+              <div class="footer-top-content-left-box">
+                <span class="footer-top-content-left-box-icon"><i class="fas fa-phone"></i></span>
+                <span class="footer-top-content-left-box-text">+1(305)1234-5678</span>
+              </div>
+              <div class="footer-top-content-left-box">
+                <span class="footer-top-content-left-box-icon"><i class="fas fa-envelope"></i></span>
+                <span class="footer-top-content-left-box-text">hello@example.com</span>
+              </div>
+              <div class="footer-top-content-left-box">
+                <span class="footer-top-content-left-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span class="footer-top-content-left-box-text">Main Avenue, 987</span>
+              </div>
+              <div class="footer-top-content-left-button">GET IN TOUCH</div>
+            </div>
+            <div class="footer-top-content-right">
+
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <div class="footer-bottom-content-first">
+              Enjoy the low price. We are tracking any intention of piracy
+            </div>
+            <div class="footer-bottom-content-second">
+              CO 2020 NEXGEN is Proudly Powered by <span>Codings</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

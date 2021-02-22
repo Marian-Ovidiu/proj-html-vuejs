@@ -39,7 +39,20 @@ var app = new Vue({
       {img: 'images/project-4.jpg', text: 'Technology workshop with education theme', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'},
       {img: 'images/project-5.jpg', text: 'Donations of clothes and food to the partner NGO', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'},
       {img: 'images/project-6.jpg', text: 'Confraternization of the  procurement team', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'},
-
+    ],
+    results: [
+      {area: 'Certifications', result: '128'},
+      {area: 'Employees', result: '230'},
+      {area: 'Customers', result: '517'},
+      {area: 'Countries Served', result: '94'},
+    ],
+    techology: [
+      {link: 'images/logo-4.png'},
+      {link: 'images/logo-5.png'},
+      {link: 'images/logo-1.png'},
+      {link: 'images/logo-2.png'},
+      {link: 'images/logo-3.png'},
+      {link: 'images/logo-4.png'}
     ]
   },
   methods: {
