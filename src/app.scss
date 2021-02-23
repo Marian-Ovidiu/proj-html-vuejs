@@ -1,3 +1,5 @@
+@import "_colors";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -69,7 +71,7 @@
             line-height: 50px;
             span {
               padding: 10px;
-              background-color: #058283;
+              @include backgroundGreen;
               border-radius: 5px;
               a {
                 color: white;
@@ -118,7 +120,7 @@
 
         &-getIn{
           padding: 10px;
-          background-color: #058283;
+          @include backgroundGreen;
           border-radius: 3px;
           color: white;
         }
@@ -143,7 +145,7 @@
         border-radius: 7px;
       }
       &-slide:nth-child(2){
-        background-color: #058283;
+        @include backgroundGreen;
       }
     }
   }
@@ -186,7 +188,7 @@
       &-seeAll {
         display: inline-block;
         padding: 10px;
-        background-color: #058283;
+        #@include backgroundGreen;
         border-radius: 3px;
         color: white;
         float: right;
@@ -520,7 +522,7 @@
           &-button {
             padding: 10px 20px;
             border-radius: 3px;
-            background-color: #058283;
+            @include backgroundGreen;
             color: white;
             margin-left: 5px;
           }
