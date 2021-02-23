@@ -464,7 +464,7 @@
     position: relative;
     &-content {
       position: absolute;
-      top: 20%;
+      top: 15%;
       left: 15%;
       width: 70%;
       display: flex;
@@ -574,7 +574,11 @@
     }
     &-top {
       width: 100%;
+      position: relative;
       &-content {
+        position: absolute;
+        top: 20%;
+        left: 15%;
         margin: auto;
         width: 70%;
         color: gray;
@@ -610,8 +614,26 @@
         }
         &-right {
           width: 75%;
-          height: 70px;
-          background-color: red;
+          display: flex;
+          justify-content: space-around;
+          &-box {
+            background-color:  #19191f;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(100% / 3.5);
+            &-title {
+              margin-bottom: 15px;
+              font-size: 30px;
+              color: white;
+              font-weight: white;
+            }
+            &-nestedBox {
+              margin: 10px 0;
+              span {
+                margin-right: 5px;
+              }
+            }
+          }
         }
       }
     }

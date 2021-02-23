@@ -444,7 +444,7 @@
 }
 #root .contact-content {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 15%;
   width: 70%;
   display: flex;
@@ -552,8 +552,12 @@
 }
 #root .footer-top {
   width: 100%;
+  position: relative;
 }
 #root .footer-top-content {
+  position: absolute;
+  top: 20%;
+  left: 15%;
   margin: auto;
   width: 70%;
   color: gray;
@@ -588,8 +592,26 @@
 }
 #root .footer-top-content-right {
   width: 75%;
-  height: 70px;
-  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+#root .footer-top-content-right-box {
+  background-color: #19191f;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(100% / 3.5);
+}
+#root .footer-top-content-right-box-title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: white;
+  font-weight: white;
+}
+#root .footer-top-content-right-box-nestedBox {
+  margin: 10px 0;
+}
+#root .footer-top-content-right-box-nestedBox span {
+  margin-right: 5px;
 }
 #root .footer-bottom {
   width: 100%;

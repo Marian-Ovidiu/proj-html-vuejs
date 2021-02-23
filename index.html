@@ -212,7 +212,10 @@
               <div class="footer-top-content-left-button">GET IN TOUCH</div>
             </div>
             <div class="footer-top-content-right">
-
+              <div class="footer-top-content-right-box" v-for="item in footer">
+                <div class="footer-top-content-right-box-title">{{item.name}}</div>
+                <div class="footer-top-content-right-box-nestedBox" v-for="element in item.content"><span><i class="fas fa-angle-right"></i></span>{{element}}</div>
+              </div>
             </div>
           </div>
         </div>

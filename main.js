@@ -53,6 +53,11 @@ var app = new Vue({
       {link: 'images/logo-2.png'},
       {link: 'images/logo-3.png'},
       {link: 'images/logo-4.png'}
+    ],
+    footer: [
+      {name: 'About', content: ['The Company', 'Institutional', 'Social Events', 'Innovation', 'Environment', 'Technology']},
+      {name: 'Services', content: ['Audit & Assurance', 'Financial Advisory', 'Analytics M&A', 'Middle Marketing', 'Legal Consulting', 'Regulatory Risk']},
+      {name: 'Support', content: ['Responsibility', 'Terms of Use', 'About Cookies', 'Privacy Policy', 'Accessibility', 'Information']}
     ]
   },
   methods: {
